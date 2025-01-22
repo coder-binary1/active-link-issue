@@ -7,8 +7,7 @@ import DrinkCategories from "./components/DrinkCategories/DrinkCategories";
 import About from "./components/About/About";
 import Drinks from "./components/Drinks/Drinks";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
-import Test from "./components/DrinkDetails/DrinkDetails";
-import DrinkTest from "./components/DrinkTest/DrinkTest";
+import DrinkDetails from "./components/DrinkDetails/DrinkDetails";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +35,7 @@ const router = createBrowserRouter([
           fetch(
             `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.drinkId}`
           ),
-        element: <DrinkTest></DrinkTest>,
+        element: <DrinkDetails></DrinkDetails>,
       },
       {
         path: "/about",

@@ -27,11 +27,11 @@ const DrinkDetails = () => {
           <li>{strDrink}</li>
         </ul>
       </div>
-      <div className="flex justify-center bg-lime-600 rounded-xl my-12 shadow-xl">
-        <figure className="w-1/3 p-10">
-          <img src={strDrinkThumb} alt="Shoes" className="rounded-xl " />
+      <div className="card card-compact flex-row bg-lime-900 w-1/2 my-12 shadow-xl mx-auto">
+        <figure>
+          <img src={strDrinkThumb} alt="Shoes" className="rounded-l-xl w-96" />
         </figure>
-        <div className="p-10 w-96 space-y-3">
+        <div className="card-body w-1/2">
           <h2 className="card-title">{strDrink}</h2>
           <p>
             <span className="bg-indigo-700 p-1 rounded-md mr-4">Glass: </span>
